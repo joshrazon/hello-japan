@@ -8,6 +8,9 @@
   - Kevin Akari Taguchi
   - Simeon Osoko
 
+### [Tasks Assignment](https://github.com/joshrazon/hello-japan/blob/main/task-assignment.md)
+  - List of tasks for each member to complete
+
 ### Tasks
 - Front End 
 
