@@ -1,3 +1,10 @@
+/* Resets */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
 nav {
   display: flex;
   align-items: center;
@@ -28,4 +35,35 @@ ul li {
 ul li:hover {
   cursor: pointer;
   color: rgb(212, 2, 2);
+}
+
+/* Footer */
+footer, .push {
+  height: 100px;
+}
+
+footer {
+  min-height: 100px;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #132959;
+  color: rgb(218, 218, 218);
+  text-align: center;
+}
+
+.icon-container {
+  font-size: 1.8rem;
+  letter-spacing: .8em;
+}
+
+footer p {
+  padding-top: .6em;
+  color: rgb(139, 139, 139);
+}
+
+footer a:link, footer a:visited {
+  color: #EBEFF4;
 }
