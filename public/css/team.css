@@ -1,0 +1,32 @@
+/* navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav img {
+    margin-left: 3rem;
+  }
+  
+  ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(236, 236, 236);
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin-right: 2rem;
+    font-size: 1.3rem;
+  }
+  
+  ul li:hover {
+    cursor: pointer;
+    color: rgb(212, 2, 2);
+  }
