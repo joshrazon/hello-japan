@@ -67,6 +67,20 @@ ul li:hover {
   color: rgb(212, 2, 2);
 }
 
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+a:hover {
+  color: rgb(212, 2, 2);
+}
+
 .hero-section {
   background-image: url(../img/hero-img2.jpg);
   background-attachment: fixed;
