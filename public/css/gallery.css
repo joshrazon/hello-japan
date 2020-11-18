@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../img/gallery-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* NAV */
@@ -97,6 +100,19 @@ a:hover {
   background-image: url(../img/card3.jpg);
 }
 
+.img4{
+  background-image: url(../img/gallery/tour4.jpg);
+}
+
+.img5{
+  background-image: url(../img/gallery/tour5.jpg);
+}
+
+.img6{
+  background-image: url(../img/gallery/tour6.jpg);
+}
+
+
 .card-text {
   margin: 1em 0.8em;
   max-width: 30ch;
@@ -118,6 +134,9 @@ a:hover {
 button {
   cursor: pointer;
 }
+button:hover {
+  cursor: pointer;
+}
 
 /* Card btn */
 .card-btn {
@@ -132,6 +151,18 @@ button {
   background-color:  rgb(212, 2, 2);
   font-size: 1.2rem;
   color: white;
+
+  transition: all .2s;
+}
+
+.card-btn button:hover {
+  cursor: pointer;
+  background-color:  rgb(228, 24, 24);
+  border: 2px solid rgb(228, 24, 24);
+}
+
+.card-btn button:active {
+  transform: scale(0.9);
 }
 
 /* Footer */

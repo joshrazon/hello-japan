@@ -3,8 +3,6 @@
     - 404 Page
   - Back End
     - Server Routing
-      - /subscribe
-      - /gallery
     - API Routing (all)
 
 ## Joshua Razon
@@ -21,8 +19,10 @@
       - fetch()
   
   - Back End
-      - EJS View Setup
+      - EJS View Setup (all)
       - Server Routing
+        - /subscribe
+        - /gallery
       - Schema/model implementation
       - ./seeds
       - Mongoose connections
