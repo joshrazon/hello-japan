@@ -9,7 +9,7 @@ const tours = [
   },
   {
     id:     2,
-    title:  'Kyoto Prefecture, Japan',
+    title:  'Kyoto Prefecture',
     credit: 'Tianshu Liu',
     url:    'https://unsplash.com/photos/khQY5Eu-aa0',
     width:  400,
@@ -25,7 +25,7 @@ const tours = [
   },
   {
     id:     4,
-    title:  'Tokyo, Japan',
+    title:  'Tokyo District',
     credit: 'Jezael Melgoza',
     url:    'https://unsplash.com/photos/layMbSJ3YOE',
     width:  400,
@@ -33,7 +33,7 @@ const tours = [
   },
   {
     id:     5,
-    title:  'Kyoto, Japan',
+    title:  'Kyoto District',
     credit: 'Kristjan Kotar',
     url:    'https://unsplash.com/photos/_UIN-pFfJ7c',
     width:  400,
