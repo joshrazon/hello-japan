@@ -20,7 +20,6 @@ app.use(function(req, res, next) {
   res.send('404: File Not Found');
 });
 
-
 const PORT = 8080;
 
 // Start server
