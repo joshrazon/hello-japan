@@ -13,9 +13,7 @@ const tours = [
     credit: 'Tianshu Liu',
     url:    'https://unsplash.com/photos/khQY5Eu-aa0',
     width:  400,
-    height: 290,
-
-    imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
+    height: 290
   },
   {
     id:     3,
@@ -23,9 +21,7 @@ const tours = [
     credit: 'Bing Hui Yau',
     url:    'https://unsplash.com/photos/y85Tir86Q34',
     width:  400,
-    height: 290,
-
-    imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
+    height: 290
   },
   {
     id:     4,
@@ -33,9 +29,7 @@ const tours = [
     credit: 'Jezael Melgoza',
     url:    'https://unsplash.com/photos/layMbSJ3YOE',
     width:  400,
-    height: 290,
-
-    imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
+    height: 290
   },
   {
     id:     5,
@@ -43,9 +37,7 @@ const tours = [
     credit: 'Kristjan Kotar',
     url:    'https://unsplash.com/photos/_UIN-pFfJ7c',
     width:  400,
-    height: 290,
-
-    imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
+    height: 290
   },
   {
     id:     6,
@@ -53,9 +45,7 @@ const tours = [
     credit: 'Hardik Pandya',
     url:    'https://unsplash.com/photos/1D88qsGPlQM',
     width:  400,
-    height: 290,
-
-    imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
+    height: 290
   }
 ];
 
