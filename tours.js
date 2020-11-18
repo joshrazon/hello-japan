@@ -1,59 +1,59 @@
 const tours = [
   {
     id:     1,
-    title:  'Hikers on W trek',
-    credit: 'Toomas Tartes',
-    url:    'https://unsplash.com/photos/Yizrl9N_eDA',
-    width:  500,
-    height: 300
+    title:  'Meguro River',
+    credit: 'Sora Sagano',
+    url:    'https://unsplash.com/photos/8sOZJ8JF0S8',
+    width:  400,
+    height: 290
   },
   {
     id:     2,
-    title:  'Adventurous Mountain Hikes',
-    credit: 'Galen Crout',
-    url:    'https://unsplash.com/photos/fItRJ7AHak8',
-    width:  500,
-    height: 300,
+    title:  'Kyoto Prefecture, Japan',
+    credit: 'Tianshu Liu',
+    url:    'https://unsplash.com/photos/khQY5Eu-aa0',
+    width:  400,
+    height: 290,
 
     imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
   },
   {
     id:     3,
-    title:  'Untitled',
-    credit: 'Lucas Clara',
-    url:    'https://unsplash.com/photos/hvPB-UCAmmU',
-    width:  500,
-    height: 300,
+    title:  'Itsukushima Shrine',
+    credit: 'Bing Hui Yau',
+    url:    'https://unsplash.com/photos/y85Tir86Q34',
+    width:  400,
+    height: 290,
 
     imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
   },
   {
     id:     4,
-    title:  'Untitled',
-    credit: 'Chiro',
-    url:    'https://unsplash.com/photos/xOigCUcFdA8',
-    width:  500,
-    height: 300,
+    title:  'Tokyo, Japan',
+    credit: 'Jezael Melgoza',
+    url:    'https://unsplash.com/photos/layMbSJ3YOE',
+    width:  400,
+    height: 290,
 
     imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
   },
   {
     id:     5,
-    title:  'Above clouds in Triglav national park',
+    title:  'Kyoto, Japan',
     credit: 'Kristjan Kotar',
-    url:    'https://unsplash.com/photos/-h15p84GY5k',
-    width:  500,
-    height: 300,
+    url:    'https://unsplash.com/photos/_UIN-pFfJ7c',
+    width:  400,
+    height: 290,
 
     imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
   },
   {
     id:     6,
-    title:  'Sunrise hike EL Hoyo Volcano',
-    credit: 'Tim Foster',
-    url:    'https://unsplash.com/photos/lSegRSDBMLw',
-    width:  500,
-    height: 300,
+    title:  'Higashiyama Ward',
+    credit: 'Hardik Pandya',
+    url:    'https://unsplash.com/photos/1D88qsGPlQM',
+    width:  400,
+    height: 290,
 
     imagePath: `<img src="./images/gallery/hike${this.id}.jpg" height="${this.height}" width="${this.width}" alt="${this.title}"></img>`
   }
