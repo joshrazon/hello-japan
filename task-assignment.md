@@ -22,6 +22,7 @@
   
   - Back End
       - EJS View Setup
+      - Server Routing
       - Schema/model implementation
       - ./seeds
       - Mongoose connections
@@ -29,16 +30,16 @@
 ## Kevin Akari Taguchi
   - Front End
       - Media queries and mobile view design
-      - /team page
-      - /member page
+      - /about-us
+        - team page
+        - members
   
   - Back End
-      - /team routing
-      - /member routing
+      - /about-me server routes
 
 ## Simeon Osoko
   - Front End
       - Media queries and mobile view design
-      - /home page
-      - /404 page
+      - /home page mobile view
+      - /404 page mobile view
       - Form accessibility & responsiveness
