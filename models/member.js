@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const toursSchema = new mongoose.Schema(
+const memberSchema = new mongoose.Schema(
   {
-    name:           Number,
+    name:           String,
     links: {
       github:       String,
       linkdIn:      String,
@@ -11,4 +11,4 @@ const toursSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('Tour', toursSchema);
+module.exports = mongoose.model('Member', memberSchema);

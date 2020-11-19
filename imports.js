@@ -6,18 +6,18 @@ const memberSeed = require(`./seeds/members.js`);
 const subsSeed = require(`./seeds/subscribers.js`);
 const toursSeed = require(`./seeds/tours.js`);
 
-
+// Models
 const Member = require(`./models/member.js`);
 const Subscriber = require(`./models/subscriber.js`);
 const Tour = require(`./models/tour.js`);
 
-
+// DB Connections
 mongoose.connect(process.env.MONGODB_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
 
-var db = mongoose.connection;
+const db = mongoose.connection;
 
 db.on('error', function(error){
   console.log(`Connection Error: ${error.message}`)
@@ -28,17 +28,17 @@ db.once('open', function() {
 
 });
 
-Member.insertMany(memberSeed, function(error, animal) {
+// Insert Data
+
+Member.insertMany(memberSeed, function(error, member) {
   console.log('Data import completed.')
-  mongoose.connection.close();
 });
 
-Subscriber.insertMany(subsSeed, function(error, animal) {
+Subscriber.insertMany(subsSeed, function(error, subscriber) {
   console.log('Data import completed.')
-  mongoose.connection.close();
 });
 
-Tour.insertMany(toursSeed, function(error, animal) {
+Tour.insertMany(toursSeed, function(error, tour) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });

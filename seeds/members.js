@@ -1,5 +1,13 @@
 const members = [
   {
+    name:         'Ariel Xiaomiao Zhang',
+    links: {
+      github:     '',
+      linkdIn:    '',
+      codePen:    ''
+    }
+  },
+  {
     name:         'Joshua Razon',
     links: {
       github:     'https://github.com/joshrazon',
@@ -8,7 +16,7 @@ const members = [
     }
   },
   {
-    name:         '',
+    name:         'Kevin Akari Taguchi',
     links: {
       github:     '',
       linkdIn:    '',
@@ -16,15 +24,7 @@ const members = [
     }
   },
   {
-    name:         '',
-    links: {
-      github:     '',
-      linkdIn:    '',
-      codePen:    ''
-    }
-  },
-  {
-    name:         '',
+    name:         'Simeon Osoko',
     links: {
       github:     '',
       linkdIn:    '',

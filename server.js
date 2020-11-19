@@ -2,13 +2,13 @@ const express = require('express');
 const path = require('path');
 const tours = require('./seeds/tours');
 const ejs = require('ejs');
-// const mongoose = require('mongoose');
-// require('dotenv').config();
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 // // Import models
-// const Tour = require(`./models/tour.js`);
-// const Member = require(`./models/member.js`);
-// const Subscriber = require(`./models/subscriber.js`);
+const Tour = require(`./models/tour.js`);
+const Member = require(`./models/member.js`);
+const Subscriber = require(`./models/subscriber.js`);
 
 // Create express app
 const app = express();
@@ -43,14 +43,6 @@ app.get('/subscribe', (req, res) => {
   res.render('./pages/subscribe');
 });
 
-// Post handler
-app.post('/subscribe', (req, res) => {
-  
-  console.log(req.body);
-  res.render('./pages/subscribed',{name: `${req.body.name}`, email: `${req.body.email}`});
-  
-});
-
 // Set team-page end-point (about us)
 app.get('/team', (req, res) => {
   res.render('./pages/team');
@@ -58,34 +50,54 @@ app.get('/team', (req, res) => {
 
 // Connect to DB
 
-// mongoose.connect(process.env.MONGODB_URL, {
-//   useUnifiedTopology: true,
-//   useNewUrlParser: true
-// });
+mongoose.connect(process.env.MONGODB_URL, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true
+});
 
-// var db = mongoose.connection;
+var db = mongoose.connection;
 
-// db.on('error', function(error){
-//   console.log(`Connection Error: ${error.message}`)
-// });
+db.on('error', function(error){
+  console.log(`Connection Error: ${error.message}`)
+});
 
-// db.once('open', function() {
-//   console.log('Connected to DB...');
-// });
+db.once('open', function() {
+  console.log('Connected to DB...');
+});
+
+// Post handler
+app.post('/subscribe', (req, res) => {
+  const newSub = new Subscriber({name: `${req.body.name}`, email: `${req.body.email}`});
+  newSub.save(err => {
+    if (err) {
+      return console.log(err);
+    } else {
+      return console.log('Saved!')
+    }
+  })
+  res.render('./pages/subscribed',{name: `${req.body.name}`, email: `${req.body.email}`});
+  
+});
 
 // Set JSON end-point
 // ---Subscribers:
 app.get('/api/v0/subscribe',(req,res) =>{
-  res.json(Subscriber);
+  Subscriber.find(function(err, data) {
+    res.json(data)
+  });
 });
 
 app.get('/api/v0/tours', (req, res) => {
-  res.json(Tour);
+  Tour.find(function(err, data) {
+    res.json(data)
+  });
 });
 
 // ---Members:
 app.get('/api/v0/team',(req,res) =>{
-  res.json(Member);
+  Member.find(function(err, data) {
+    res.json(data)
+  });
 });
 
 // Return JSON object based on the :id of gallery
