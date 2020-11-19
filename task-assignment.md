@@ -34,7 +34,6 @@
     - /about us ejs view 
 ## Simeon Osoko
   - Front End
-      - Media queries and mobile view design
+      - Media queries and responsive design
       - /home page mobile view
       - /404 page mobile view
-      - Form accessibility & responsiveness
