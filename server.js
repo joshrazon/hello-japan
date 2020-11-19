@@ -5,8 +5,10 @@ const ejs = require('ejs');
 // const mongoose = require('mongoose');
 // require('dotenv').config();
 
-// Import models
-// const Cake = require(`./models/tour.js`);
+// // Import models
+// const Tour = require(`./models/tour.js`);
+// const Member = require(`./models/member.js`);
+// const Subscriber = require(`./models/subscriber.js`);
 
 // Create express app
 const app = express();
@@ -16,7 +18,6 @@ app.set('view engine','ejs');
 
 // Parse all requests for url encoded form data.
 app.use(express.urlencoded({extended: true}));
-
 
 // app.use is for using middleware
 app.use(express.static(path.join(__dirname, 'public')));
@@ -74,32 +75,34 @@ app.get('/team', (req, res) => {
 });
 
 // Set JSON end-point
-
-// Subscribers:
+// ---Subscribers:
 app.get('/api/v0/subscribe',(req,res) =>{
-  res.json(subscribers);
+  res.json(Subscriber);
 });
-// Members:
+
+// ---Members:
 app.get('/api/v0/team',(req,res) =>{
-  res.json(members);
-}) 
-// Gallerys:
-// Return a JSON array of gallery
-// app.get('/api/v0/tours', (req, res) => {
-//   Cake.find({}, (err, data) => {
-//     if (err) {
-//       res.send('Sorry there are something wrong...')
-//     }
-//     else {
-//       res.json(data);
-//     }
-//   });
-// });
+  res.json(Member);
+});
 
 // Return JSON object based on the :id of gallery
 app.get('/api/v0/tours/:id',(req,res) => {
   let tourId = req.params.id;
-  Cake.findOne({id: tourId}, (err, data) => {
+  Tour.findOne({id: tourId}, (err, data) => {
+    if (err || data===null) {
+      res.send('Sorry there are something wrong...');
+      console.log(err);
+    }
+    else {
+      res.json(data);
+    }
+  });
+});
+
+// Return JSON object based on the :id of gallery
+app.get('/api/v0/tours/:id',(req,res) => {
+  let tourId = req.params.id;
+  Tour.findOne({id: tourId}, (err, data) => {
     if (err || data===null) {
       res.send('Sorry there are something wrong...');
       console.log(err);
@@ -119,7 +122,6 @@ app.use(function(req, res) {
 
 // Set port preferrence with default
 const PORT = 3000;
-
 
 app.listen(PORT, function() {
   console.log(`Listening on port: ${PORT}`)
