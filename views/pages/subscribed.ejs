@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="./css/subscribe.css">
+    <title>JP Tours</title>
+  </head>
+  <body>
+    <%- include('../partials/nav'); %>
+
+    <div class="hero">
+      <div class="flex-container">
+        <div class="subscribed">
+          <p>Thanks for subscribing <%= name %>!</p> 
+          <p> Your email: <%= email %> is now subscribed!</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
+  

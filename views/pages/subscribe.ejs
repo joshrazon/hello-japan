@@ -2,11 +2,29 @@
 <html lang="en">
   <head>
     <%- include('../partials/head'); %>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/subscribe.css">
+    <script src="./js/subscriber.js" defer></script>
     <title>JP Tours</title>
   </head>
   <body>
     <%- include('../partials/nav'); %>
+
+    <div class="hero">
+      <div class="flex-container">
+        <form id="form" method="POST">
+          <fieldset>
+            <legend>Subscribe To Our <br> Newsletter!</legend>
+            <label for="name">Name*</label>
+            <input type="name" required placeholder="Enter your name" name="name" id="name">
+            
+            <label for="email">Email*</label>
+            <input type="email" required placeholder="Enter your email" name="email" id="email">
+            
+            <button type="submit">Sign-up</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
     
     <%- include('../partials/footer'); %>
   </body>

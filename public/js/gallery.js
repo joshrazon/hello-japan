@@ -22,7 +22,11 @@ fetch(`${window.location.origin}/api/v0/tours`)
     <div class="card-outer">
       <div class="card img${tour.id}"></div>
       <div class="card-text">
-      <h3>${tour.title}</h3>
+      <h3>
+      ${tour.title}
+      <br>
+      <span>photo by: ${tour.credit}</span>
+      </h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia velit odit exercitationem saepe tempore quibusdam.</p>
     </div>
       <div class="card-btn">

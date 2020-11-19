@@ -125,6 +125,12 @@ a:hover {
   color: rgb(212, 2, 2);
 } 
 
+.card-text span {
+  font-size: 12px;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
 .card-text p {
   margin-top: 1em;
   font-size: 1.2rem;
