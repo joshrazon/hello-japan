@@ -117,9 +117,8 @@ app.get('/api/v0/tours/:id',(req,res) => {
 
 app.use(function(req, res) {
   res.status(404);
-  res.send('404: File Not Found');
+  res.render('./pages/404');
 });
-
 
 // Set port preferrence with default
 const PORT = process.env.PORT || 3000;
