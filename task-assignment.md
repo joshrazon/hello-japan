@@ -25,18 +25,18 @@
         - /admin
         - /subscribe
         - /gallery
-        - /about us
       - Schema/model implementation
       - ./seeds
       - Mongoose connections
 
 ## Kevin Akari Taguchi
   - Front End
-      - Media queries and mobile view design
-      - /about-us
-        - team page
-        - members
-
+    - Media queries and mobile view design
+    - /about-us
+      - team page
+      - members
+  - Back End
+    - /about us ejs view 
 ## Simeon Osoko
   - Front End
       - Media queries and mobile view design
