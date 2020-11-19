@@ -3,6 +3,7 @@
     - 404 Page
   - Back End
     - Server Routing
+      - 404 page
     - API Routing (all)
 
 ## Joshua Razon
@@ -21,8 +22,10 @@
   - Back End
       - EJS View Setup (all)
       - Server Routing
+        - /admin
         - /subscribe
         - /gallery
+        - /about us
       - Schema/model implementation
       - ./seeds
       - Mongoose connections
@@ -33,9 +36,6 @@
       - /about-us
         - team page
         - members
-  
-  - Back End
-      - /about-me server routes
 
 ## Simeon Osoko
   - Front End
