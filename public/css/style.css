@@ -340,6 +340,35 @@ footer a:link, footer a:visited {
 }
 
 
+/* media query to fix mobile screen etc */
+
+
+@media (max-width: 720px){
+  nav{
+		height: auto;
+		flex-direction: column;
+	}
+
+	nav ul{
+		flex-direction: column;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+  
+  nav img {
+    margin-right: 6rem;
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    margin-left: 15px;
+  }
+
+ 
+ 
+}
+
+
 /* TODO */
 /* Make It responsive */
 /* Add Animations */
