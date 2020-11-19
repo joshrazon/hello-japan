@@ -17,7 +17,7 @@
       - /gallery page
       - /subscribe page
       - responsive nav
-      - fetch()
+      - fetch() (all)
   
   - Back End
       - EJS View Setup (all)
