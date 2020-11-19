@@ -2,9 +2,9 @@
   - Front End
     - 404 Page
   - Back End
-    - Server Routing
-      - 404 page
+    - Server Routing (all)
     - API Routing (all)
+    - Mongoose connections
 
 ## Joshua Razon
   - Administrative
@@ -21,13 +21,8 @@
   
   - Back End
       - EJS View Setup (all)
-      - Server Routing
-        - /admin
-        - /subscribe
-        - /gallery
       - Schema/model implementation
       - ./seeds
-      - Mongoose connections
 
 ## Kevin Akari Taguchi
   - Front End
