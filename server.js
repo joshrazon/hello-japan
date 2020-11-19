@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const tours = require('./tours');
+const tours = require('./seeds/tours');
 // Create express app
 const app = express();
 app.set('view engine', 'ejs');
