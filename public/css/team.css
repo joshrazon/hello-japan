@@ -445,6 +445,12 @@ footer a:link, footer a:visited {
     margin: 1em;
   }
 }
+@media screen and (max-width: 720px){
+  .team-link {
+    font-size: 30px;
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   .articles-container {
