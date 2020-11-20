@@ -188,19 +188,27 @@ button {
 }
   
 /* Card btn */
-.team-btn {
+.team-link {
+  width: 100%;
+  padding: 10px;
   align-self: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-evenly;
 }
-  
-/* design team button */
-.team-btn button {
-  margin: 1em 0.8em;
-  border: 2px solid rgb(212, 2, 2);
-  border-radius: 4px;
-  padding: .3em 1em;
-  background-color:  rgb(212, 2, 2);
-  font-size: 1.2rem;
-  color: white;
+
+.team-link a,
+.team-link a:link,
+.team-link a:visited,
+.team-link a:active,
+.team-link a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(212, 2, 2);
+}
+
+.team-link a:hover {
+  color: rgb(161, 0, 0);
 }
 
 /* title of article */
