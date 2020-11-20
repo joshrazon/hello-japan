@@ -27,28 +27,44 @@ nav {
   position: fixed;
   width: 100%;
 }
-  
+
 nav img {
   margin-left: 3rem;
 }
-  
+
 ul {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'LucidaGrande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color:rgb(236, 236, 236);
-  list-style-type: none;}
-  
+  list-style-type: none;
+}
+
 ul li {
   margin-right: 2rem;
   font-size: 1.3rem;
 }
-  
+
 ul li:hover {
   cursor: pointer;
   color: rgb(212, 2, 2);
 }
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+a:hover {
+  color: rgb(212, 2, 2);
+}
+
 
 /* hero section */
 .hero-section {
