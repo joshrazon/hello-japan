@@ -13,7 +13,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: relative;
   width: 100%;
 }
 
@@ -173,7 +173,6 @@ legend {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
-  color: rgb(236, 236, 236);
 }
 
 .exp-text p {
@@ -189,18 +188,6 @@ legend {
 }
 
 /* Button Styles */
-.btn-dark {
-  align-self: flex-start;
-  margin-top: 1em;
-  border: 2px solid rgb(212, 2, 2);
-  border-radius: 4px;
-  padding: .4em .8em;
-  background-color: #132959;
-  font-size: 27.2px;
-  color: white;
-  transition: all .3s;
-}
-
 .exp-text button:hover {
   background-color: rgb(212, 2, 2);
 }
@@ -260,4 +247,34 @@ footer p {
 
 footer a:link, footer a:visited {
   color: #EBEFF4;
+}
+
+@media(max-width: 1130px) {
+  .container {
+    margin-top: 2em;
+  }
+
+  .exp-text h2 {
+    margin: 0;
+  }
+
+  .exp-container-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 600px) {
+  .exp-text{
+    font-size: 24px;
+  }
+
+  .exp-text p {
+    font-size: 16px;
+  }
+
+  .btn-wht {
+    font-size: 19px;
+  }
 }
