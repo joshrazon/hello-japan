@@ -23,6 +23,7 @@
 ### Attributions
 - [404 Page Codepen](https://codepen.io/purplexmoss/pen/PoPyzMW)
 - [unsplash](https://unsplash.com/) for all images
+
 ### GET Routes
 - /group-tours
   - Shows a gallery of available tours that you can go on
