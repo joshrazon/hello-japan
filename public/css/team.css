@@ -14,6 +14,8 @@ html, body {
 .main {
   min-height: 100%;
   margin-bottom: -100px;
+  /* hide overflow */
+  overflow:hidden;
 }
 
 /* navigation bar */
@@ -85,13 +87,13 @@ ul li:hover {
 }
 
 .title h2 {
-    color: rgb(206, 6, 6);
+    color:rgb(185, 0, 0);
     font-family: 'Nova Square', cursive;
     font-size: 3rem;
 }
 
 .title p {
-  color: rgb(212, 2, 2);
+  color: rgb(185, 0, 0); 
   font-family: 'Nova Square', cursive;
   font-size: 2rem;
 }
@@ -113,7 +115,7 @@ ul li:hover {
 }
   
 .team-card {
-  flex-basis: 80%;
+  flex-basis: 78%;
   display: flex;
   flex-direction: column;
   max-height: 63vh;
@@ -133,7 +135,7 @@ ul li:hover {
 }
   
 .image2{
-  background-image: url(../img/card2.jpg);
+  background-image: url(../img/members/Ariel-profile.jpg);
 }
   
 .image3{
@@ -141,7 +143,7 @@ ul li:hover {
 }
 
 .image4{
-  background-image: url(../img/card3.jpg);
+  background-image: url(../img/members/Kevin-profile.jpg);
 }
   
 .card-text {
@@ -154,7 +156,7 @@ ul li:hover {
 }
   
 .card-text h3 {
-  color: rgb(212, 2, 2);
+  color: rgb(185, 0, 0);
 } 
   
 .card-text p {
@@ -214,13 +216,11 @@ button {
 }
 
 /* position articles and image using by grid */
-/* not responsible, need maintenance */
 .article-1 {
   grid-column: 2/3;
 }
   
 .picture {
-  object-fit: cover;
   grid-column: 3/4;
 }
   
@@ -320,13 +320,11 @@ footer a:link, footer a:visited {
     
   /* design articles and image */
   .article-1 p{
-    font-size: 1.4em;
     line-height: 30px;
     font-weight: 400;
   }
   
   .article-2 p{
-    font-size: 1.4em;
     line-height: 30px;
     font-weight: 500;
   }
@@ -340,10 +338,10 @@ footer a:link, footer a:visited {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .articles-container {
     display: grid;
-    grid-template-columns: 1fr 550px 600px 1fr;
+    grid-template-columns: 1fr 500px 550px 1fr;
     grid-template-rows: 400px 330px;
   
     width: 100%;
@@ -433,33 +431,34 @@ footer a:link, footer a:visited {
   /* hide image */
   .picture {
     visibility: hidden;
+    height: auto;
   }
 
   /* change line height of motto and History */
   .article-1 p{
-    
-    line-height: 23px;
+    line-height: 24px;
   }
   
   .article-2 p{
-    
-    line-height: 23px;
+    line-height: 24px;
   }
 }
 
-/* made responsive of cards and About us section */
-@media screen and (max-width: 500px) {
+/* made responsive of title, cards and About us section */
+@media screen and (max-width: 600px) {
+  .title p {
+    font-size: 25px;
+  }
+  
   .articles-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 90%;
   }
-    /* picture  */
-  .picture {
-    z-index: -99;
-    position: relative;
-  }
+
+
+  /* positioning articles */
   .article-1 {
     position: absolute;
   }
