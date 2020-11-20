@@ -11,14 +11,7 @@
 ### [Tasks Assignment](https://github.com/joshrazon/hello-japan/blob/main/task-assignment.md)
   - List of tasks for each member to complete
 
-### Tasks
-- Front End 
-
-  - Accessible and responsive navigation
-  - Accessible forms
-  - Accessible and semantic images
-  - Responsive galleries and card layouts
-  - 404 page 
+### [Heroku Link](https://hello-japan-cpnt262-final.herokuapp.com/)
 
 ### Attributions
 - [404 Page Codepen](https://codepen.io/purplexmoss/pen/PoPyzMW)
@@ -46,6 +39,14 @@
   - sends back a list of our team members
 
 ### Tasks
+- Front End 
+
+  - Accessible and responsive navigation
+  - Accessible forms
+  - Accessible and semantic images
+  - Responsive galleries and card layouts
+  - 404 page 
+
 - Back End 
 
   - ./seeds 
