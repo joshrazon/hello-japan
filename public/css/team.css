@@ -135,6 +135,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   max-height: 63vh;
+  min-height: 408px;
   width: 25vw;
   border-radius: 4px;
   box-shadow: 2px 2px 10px grey;
@@ -147,7 +148,8 @@ a:hover {
 }
   
 .image1 {
-  background-image: url(../img/card1.jpg);
+  background-image: url(../img/members/Josh-profile.jpg);
+  background-position: 50% 80%;
 }
   
 .image2{
@@ -155,7 +157,7 @@ a:hover {
 }
   
 .image3{
-  background-image: url(../img/card3.jpg);
+  background-image: url(../img/card1.jpg);
 }
 
 .image4{
@@ -352,6 +354,7 @@ footer a:link, footer a:visited {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -391,6 +394,10 @@ footer a:link, footer a:visited {
   .article-2 p{
     font-size: 1.2em;
     line-height: 30px;
+  }
+
+  .image1 {
+    background-position: 50% 70%;
   }
 } 
 
