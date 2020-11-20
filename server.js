@@ -22,19 +22,13 @@ app.use(express.urlencoded({extended: true}));
 // app.use is for using middleware
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Group-tours (gallery)
-app.get('/group-tours', (req, res) => res.render('./pages/gallery'));
-
-// Subscribe 
-app.get('/subscribe', (req, res) => res.render('./pages/subscribe'));
-
 // Set homepage end-point
 app.get('/' || '/index', function(req, res){
   res.render('./pages/index');
 });
 
 // Set gallery-page end-point
-app.get('/gallery', (req, res) => {
+app.get('/group-tours', (req, res) => {
   res.render('./pages/gallery');
 });
 
@@ -46,6 +40,11 @@ app.get('/subscribe', (req, res) => {
 // Set team-page end-point (about us)
 app.get('/team', (req, res) => {
   res.render('./pages/team');
+});
+
+// Set admin-page end-point
+app.get('/admin', (req, res) => {
+  res.render('./pages/admin');
 });
 
 // Connect to DB
@@ -117,9 +116,8 @@ app.get('/api/v0/tours/:id',(req,res) => {
 
 app.use(function(req, res) {
   res.status(404);
-  res.send('404: File Not Found');
+  res.render('./pages/404');
 });
-
 
 // Set port preferrence with default
 const PORT = process.env.PORT || 3000;
