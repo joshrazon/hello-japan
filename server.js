@@ -64,6 +64,22 @@ db.once('open', function() {
   console.log('Connected to DB...');
 });
 
+app.get('/group-tours/:id', (req, res) => {
+  const singleTour = parseInt(req.params.id);
+  Tour.find({id: req.params.id}, (err,data) => {
+    if (err || data===null) {
+      res.send('Sorry there are something wrong...');
+      console.log(err);
+    }
+    else {
+      res.render('pages/tour-info', {
+        id: `${singleTour}`,
+        title: `${data[0].title}`
+      });
+    }
+  });  
+});
+
 // Post handler
 app.post('/subscribe', (req, res) => {
   const newSub = new Subscriber({name: `${req.body.name}`, email: `${req.body.email}`});

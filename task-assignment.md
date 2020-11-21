@@ -14,13 +14,15 @@
     - Create task assignments doc
   
   - Front End
-      - /gallery page
-      - /subscribe page
-      - responsive nav
+      - Pages
+        - /subscribe
+        - /admin
+        - /gallery
+        - /gallery/:id
       - fetch() (all)
   
   - Back End
-      - EJS View Setup (all)
+      - EJS View Setup (pages and partials)
       - Schema/model implementation
       - ./seeds
 
@@ -29,7 +31,6 @@
     - Media queries and mobile view design
     - /about-us
       - team page
-      - members
   - Back End
     - /about us ejs view 
 ## Simeon Osoko

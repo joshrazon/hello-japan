@@ -30,7 +30,7 @@ fetch(`${window.location.origin}/api/v0/tours`)
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia velit odit exercitationem saepe tempore quibusdam.</p>
     </div>
       <div class="card-btn">
-        <button>Tours & Pricing</button>
+        <button><a href="/group-tours/${tour.id}">Tours & Pricing</a></button>
       </div>
     </div>
     `

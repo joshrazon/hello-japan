@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 /* Resets */
 * {
   margin: 0;
@@ -12,6 +14,8 @@ html, body {
 .main {
   min-height: 100%;
   margin-bottom: -100px;
+  /* hide overflow */
+  overflow:hidden;
 }
 
 /* navigation bar */
@@ -23,28 +27,44 @@ nav {
   position: fixed;
   width: 100%;
 }
-  
+
 nav img {
   margin-left: 3rem;
 }
-  
+
 ul {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'LucidaGrande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color:rgb(236, 236, 236);
-  list-style-type: none;}
-  
+  list-style-type: none;
+}
+
 ul li {
   margin-right: 2rem;
   font-size: 1.3rem;
 }
-  
+
 ul li:hover {
   cursor: pointer;
   color: rgb(212, 2, 2);
 }
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+a:hover {
+  color: rgb(212, 2, 2);
+}
+
 
 /* hero section */
 .hero-section {
@@ -74,19 +94,22 @@ ul li:hover {
 /* our team */
 .title {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 2em;
+
+  text-align: center;
 }
 
 .title h2 {
-    color: rgb(206, 6, 6);
+    color:rgb(185, 0, 0);
     font-family: 'Nova Square', cursive;
     font-size: 3rem;
 }
 
 .title p {
-  color: rgb(212, 2, 2);
+  color: rgb(185, 0, 0); 
   font-family: 'Nova Square', cursive;
   font-size: 2rem;
 }
@@ -102,41 +125,43 @@ ul li:hover {
   display: flex;
   justify-content: center;
   max-width: 100%;
-   height: 69vh;
+  height: 70vh;
 /* centerized the card in team-container */
   margin-top: 5em;
 }
   
 .team-card {
-  flex-basis: 80%;
+  flex-basis: 78%;
   display: flex;
   flex-direction: column;
-  max-height: 80%;
-  width: 23vw;
+  max-height: 63vh;
+  min-height: 408px;
+  width: 25vw;
   border-radius: 4px;
   box-shadow: 2px 2px 10px grey;
   background-color: #F4F5F9;
 }
   
-.card {
-  flex-basis: 40%;
+.card, .card2 {
+  flex-basis: 60%;
   background-position: center;
-  }
+}
   
 .image1 {
-  background-image: url(../img/card1.jpg);
+  background-image: url(../img/members/Josh-profile.jpg);
+  background-position: 50% 80%;
 }
   
 .image2{
-  background-image: url(../img/card2.jpg);
+  background-image: url(../img/members/Ariel-profile.jpg);
 }
   
 .image3{
-  background-image: url(../img/card3.jpg);
+  background-image: url(../img/card1.jpg);
 }
 
 .image4{
-  background-image: url(../img/card3.jpg);
+  background-image: url(../img/members/Kevin-profile.jpg);
 }
   
 .card-text {
@@ -149,7 +174,7 @@ ul li:hover {
 }
   
 .card-text h3 {
-  color: rgb(212, 2, 2);
+  color: rgb(185, 0, 0);
 } 
   
 .card-text p {
@@ -163,19 +188,29 @@ button {
 }
   
 /* Card btn */
-.team-btn {
+.team-link {
+  width: 100%;
+  padding: 10px;
   align-self: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-evenly;
 }
-  
-.team-btn button {
-  margin: 1em 0.8em;
-  border: 2px solid rgb(212, 2, 2);
-  border-radius: 4px;
-  padding: .3em 1em;
-  background-color:  rgb(212, 2, 2);
-  font-size: 1.2rem;
-  color: white;
+
+.team-link a,
+.team-link a:link,
+.team-link a:visited,
+.team-link a:active,
+.team-link a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(212, 2, 2);
 }
+
+.team-link a:hover {
+  color: rgb(161, 0, 0);
+}
+
 /* title of article */
 .topic {
   display: flex;
@@ -191,7 +226,6 @@ button {
   width: 85vw;
   height: 5px;
   background-color: #000;
-
   /* gave a space between articles and topic */
   margin-bottom: 6rem;
 }
@@ -208,13 +242,11 @@ button {
 }
 
 /* position articles and image using by grid */
-/* not responsible, need maintenance */
 .article-1 {
   grid-column: 2/3;
 }
   
 .picture {
-  object-fit: cover;
   grid-column: 3/4;
 }
   
@@ -228,11 +260,15 @@ button {
   font-size: 1.2em;
   line-height: 30px;
   font-weight: 400;
+
+  font-family: 'PT Serif', serif;
 }
 
 .article-2 p{
   font-size: 1.2em;
   line-height: 30px;
+
+  font-family: 'PT Serif', serif;
 }
 
 /* article title (our motto, History)*/
@@ -274,10 +310,11 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
-/* made responsible about us area */
+/* resposible */
 @media screen and (max-width: 1600px) {
+  /* made responsible about us area */
   .articles-container {
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr 550px 600px 1fr;
     grid-template-rows: 400px 330px;
   
@@ -309,22 +346,29 @@ footer a:link, footer a:visited {
     
   /* design articles and image */
   .article-1 p{
-    font-size: 1.2em;
     line-height: 30px;
     font-weight: 400;
   }
   
   .article-2 p{
-    font-size: 1.2em;
     line-height: 30px;
     font-weight: 500;
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* make cards responsible */
+@media screen and (max-width: 1500px) {
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
   .articles-container {
     display: grid;
-    grid-template-columns: 1fr 550px 600px 1fr;
+    grid-template-columns: 1fr 500px 550px 1fr;
     grid-template-rows: 400px 330px;
   
     width: 100%;
@@ -358,5 +402,138 @@ footer a:link, footer a:visited {
   .article-2 p{
     font-size: 1.2em;
     line-height: 30px;
+  }
+
+  .image1 {
+    background-position: 50% 70%;
+  }
+} 
+
+@media screen and (max-width: 1000px) {
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr 330px 400px 1fr;
+  
+    width: 100%;
+  
+    gap: 1em;
+  }
+    
+  
+  .picture {
+    grid-column: 3/4;
+    /* trying to figure it out how to make it responsible */
+    
+  }
+  
+  /* design articles and image */
+  .article-1 p{
+    font-size: 1.1em;
+    line-height: 21px;
+    margin: 1em;
+
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+
+    max-height: 20em;
+  }
+  
+  .article-2 p{
+    font-size: 1.1em;
+    line-height: 21px;
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 720px){
+  .team-link {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .articles-container {
+    grid-template-rows: 300px 330px;
+  }
+    
+  .article-1 {
+    grid-column: 2/4;
+  }
+
+  .article-2 {
+    grid-column: 2/4;
+  }
+  
+  /* hide image */
+  .picture {
+    visibility: hidden;
+    height: auto;
+  }
+
+  /* change line height of motto and History */
+  .article-1 p{
+    line-height: 24px;
+  }
+  
+  .article-2 p{
+    line-height: 24px;
+  }
+}
+
+/* made responsive of title, cards and About us section */
+@media screen and (max-width: 600px) {
+  .title p {
+    font-size: 25px;
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+  }
+
+
+  /* positioning articles */
+  .article-1 {
+    position: absolute;
+  }
+
+  .article-2 {
+    position: relative;
+    margin-top: 4rem;
+  }
+  
+  /* design articles and image */
+  .article-1 p{
+    font-size: 1.05em;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+
+    max-height: 23em;
+  }
+  
+  .article-2 p{
+    font-size: 1.05em;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+
+    max-height: 27em;
+
+    /* give space between footer and history article */
+    margin-bottom: 3rem;
+  }
+
+  /* change topic size and position*/
+  .topic {
+    margin-left: 5px;
+    font-size: 3.5em;
+  }
+  /* under bar: adjust space */
+  .bar {
+    margin-bottom: 3rem; 
   }
 }

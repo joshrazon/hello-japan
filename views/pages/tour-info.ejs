@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link href="/css/subscribe.css" rel="stylesheet" type="text/css">
+    <title>JP Tours</title>
+  </head>
+  <body>
+    <%- include('../partials/nav'); %>
+
+    
+
+    <div class="container">
+      <div class="exp-container-reverse">
+        <div class="exp-text bg-wht">
+          <h2><%=title%></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium provident voluptatem corrupti commodi eos dignissimos, dolores similique ipsa blanditiis magnam, iure est incidunt esse? Soluta beatae enim ut deleniti quasi ipsa mollitia voluptates recusandae!</p>
+          <button class="btn-wht">Book Tour</button>
+        </div>
+        <div class="exp-img">
+          <img src="/img/gallery/tour<%=id%>.jpg" alt="image of a crosswalk in Japan">
+        </div>    
+      </div>
+    </div>
+    
+    <%- include('../partials/footer'); %>
+  </body>
+</html>

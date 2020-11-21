@@ -13,7 +13,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: relative;
   width: 100%;
 }
 
@@ -146,6 +146,78 @@ legend {
   text-align: center;
 }
 
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-img {
+  display: flex;
+}
+.exp-img img {
+  max-width: 100%;
+
+}
+
+.exp-text {
+  align-self: stretch;
+  justify-self: stretch;
+  padding: .5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #132959;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.exp-text p {
+  max-width: 40ch;
+  padding-top: 1em;
+  font-size: 19.2px;
+}
+
+.exp-container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/* Button Styles */
+.exp-text button:hover {
+  background-color: rgb(212, 2, 2);
+}
+
+.bg-wht {
+  background-color: #EBEFF4;
+  color: #132959;
+}
+
+.btn-wht {
+  align-self: flex-start;
+  margin-top: 1em;
+  border: 2px solid rgb(212, 2, 2);
+  border-radius: 4px;
+  padding: .4em .8em;
+  background-color: #F4F5F9;
+  font-size: 1.7rem;
+  color: #132959;
+  transition: all .3s;
+}
+
+.btn-wht:hover {
+  color: #F4F5F9;
+  cursor: pointer;
+}
+
+.btn-wht:active {
+  transform: scale(0.9);
+}
+
 /* Footer */
 footer, .push {
   height: 100px;
@@ -177,6 +249,7 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
+<<<<<<< HEAD
 label #btn,
 label #cancel {
   color: white;
@@ -267,3 +340,34 @@ nav ul li {
 
  
 }
+=======
+@media(max-width: 1130px) {
+  .container {
+    margin-top: 2em;
+  }
+
+  .exp-text h2 {
+    margin: 0;
+  }
+
+  .exp-container-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 600px) {
+  .exp-text{
+    font-size: 24px;
+  }
+
+  .exp-text p {
+    font-size: 16px;
+  }
+
+  .btn-wht {
+    font-size: 19px;
+  }
+}
+>>>>>>> 1f8cca775faedf9d2391816bbd6266fcde500091
