@@ -8,14 +8,20 @@
   - Kevin Akari Taguchi
   - Simeon Osoko
 
-### [Tasks Assignment](https://github.com/joshrazon/hello-japan/blob/main/task-assignment.md)
+### [Group Members Individual Tasks](https://github.com/joshrazon/hello-japan/blob/main/task-assignment.md)
   - List of tasks for each member to complete
 
 ### [Heroku Link](https://hello-japan-cpnt262-final.herokuapp.com/)
 
 ### Attributions
 - [404 Page Codepen](https://codepen.io/purplexmoss/pen/PoPyzMW)
-- [unsplash](https://unsplash.com/) for all images
+- [Tour picture 1](https://unsplash.com/photos/8sOZJ8JF0S8) 
+- [Tour picture 2](https://unsplash.com/photos/khQY5Eu-aa0) 
+- [Tour picture 3](https://unsplash.com/photos/y85Tir86Q34) 
+- [Tour picture 4](https://unsplash.com/photos/layMbSJ3YOE) 
+- [Tour picture 5](https://unsplash.com/photos/_UIN-pFfJ7c) 
+- [Tour picture 6](https://unsplash.com/photos/1D88qsGPlQM) 
+
 
 ### GET Routes
 - /group-tours
