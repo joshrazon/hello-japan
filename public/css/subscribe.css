@@ -176,3 +176,94 @@ footer p {
 footer a:link, footer a:visited {
   color: #EBEFF4;
 }
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  float: right;
+  margin-right: 40px;
+  display: none;
+  
+   
+}
+
+#toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 580px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  label #btn {
+    display: block;
+    margin-right: -2rem;
+  }
+
+  label #cancel {
+    margin-right: -2rem;
+  }
+
+  
+  
+
+  
+ 
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 45%;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: .5s;
+    z-index: 10;
+    display: block;
+    background: black;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+
+ 
+nav ul li {
+  
+  margin: 40px 0;
+  line-height: 30px;
+  justify-content: center;
+  
+}
+
+#toggle:checked ~ ul {
+  left: 0;
+}
+
+#toggle:checked ~ label #btn {
+  display: none;
+}
+
+#toggle:checked ~ label #cancel {
+  display: block;
+}
+
+
+
+  nav img {
+    margin-bottom: -0.5rem;
+    margin-left: -2rem;
+  }
+
+  .flex-container {
+    width: 100%;
+    height: 80%;
+    margin-top: 3.5rem;
+  }
+
+
+ 
+}

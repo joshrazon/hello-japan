@@ -297,6 +297,28 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  float: right;
+  margin-right: 40px;
+  display: none;
+  
+   
+}
+
+#toggle {
+  display: none;
+}
+
+
+
+
+
+
 @media screen and (max-width: 1500px) {
   .exp-text h2 {
     font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
@@ -343,33 +365,92 @@ footer a:link, footer a:visited {
 /* media query to fix mobile screen etc */
 
 
-@media (max-width: 720px){
-  nav{
-		height: auto;
-    flex-direction: column;
-	}
+@media screen and (max-width: 580px) {
 
-	nav ul{
-		flex-direction: column;
-    margin-bottom: 15px;
-    line-height: 30px;
-    text-align: center;
-    margin-right: 3rem;
+  * {
+    margin: 0;
+    padding: 0;
   }
+
+  label #btn {
+    display: block;
+    margin-right: -2rem;
+  }
+
+  label #cancel {
+    margin-right: -2rem;
+  }
+
   
-  nav img {
-    margin-right: 7.5rem;
-    
-    
-  }
+  
 
-  .hero-text h1 {
-    margin-left: 10px;
+  
+ 
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 45%;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: .5s;
+    z-index: 10;
+    display: block;
+    background: black;
+    margin-top: 2rem;
+    text-transform: uppercase;
   }
 
  
+nav ul li {
+  
+  margin: 40px 0;
+  line-height: 30px;
+  
+}
+
+#toggle:checked ~ ul {
+  left: 0;
+}
+
+#toggle:checked ~ label #btn {
+  display: none;
+}
+
+#toggle:checked ~ label #cancel {
+  display: block;
+}
+
+
+/* parallax */
+  .parallax h1 {
+    font-size: 30px;
+  }
+
+  /* hero text */
+  .hero-text {
+    margin-left: 0.5rem;
+  }
+ 
+/* services  */
+  .services {
+    display: block;
+  }
+  .services-text {
+    margin-bottom: 2rem;
+  }
+
+  nav img {
+    margin-bottom: -0.5rem;
+    margin-left: -2rem;
+  }
+
+
  
 }
+
+
+  
 
 
 /* TODO */
