@@ -38,3 +38,4 @@
       - Media queries and responsive design
       - /home page mobile view
       - /404 page mobile view
+      - Implement Hamburger toggle
