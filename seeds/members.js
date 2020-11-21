@@ -28,9 +28,9 @@ const members = [
   {
     name:         'Simeon Osoko',
     links: {
-      github:     '',
+      github:     'https://github.com/simmytun',
       linkdIn:    '',
-      codePen:    ''
+      codePen:    'https://codepen.io/simmytun'
     }
   }
 ];
